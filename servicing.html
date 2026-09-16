@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto Showroom - Free Servicing</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        /* OFFER DETAILS BOX */
+        .info-box {
+            background-color: whitesmoke;
+            border: 1px solid silver;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: dimgray;
+        }
+
+        .highlight-text {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* FORM BOX */
+        .form-box {
+            background-color: whitesmoke;
+            border: 1px solid silver;
+            padding: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 12px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 4px;
+            color: black;
+        }
+
+        .input-group input,
+        .input-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid gray;
+            font-size: 14px;
+        }
+
+        /* BUTTON */
+        .submit-btn {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        /* FOOTER */
+        .footer {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="main-box">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>AUTO SHOWROOM</h1>
+            <div>Free Servicing & Maintenance Program</div>
+        </div>
+
+        <!-- Offer Banner -->
+        <div class="offer-bar">
+            SPECIAL OFFER: 6 Months FREE Servicing for Online Website Orders!
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="menu">
+            <div class="menu-item"><a href="home.html">Home</a></div>
+            <div class="menu-item"><a href="car.html">Cars & EVs</a></div>
+            <div class="menu-item"><a href="bike.html">Bikes & Scooters</a></div>
+            <div class="menu-item"><a href="servicing.html">Servicing</a></div>
+            <div class="menu-item"><a href="prices.html">Price List</a></div>
+            <div class="menu-item"><a href="contact.html">Contact Us</a></div>
+            <div class="menu-item"><a href="index.html" style="color: yellow;">Logout</a></div>
+        </div>
+
+        <!-- Section 1: Offer Details -->
+        <div class="section-title">1. What is Included in Free Servicing?</div>
+
+        <div class="info-box">
+            <div class="info-item">
+                <b class="highlight-text">&check; Engine Oil Check & Top-Up:</b> Complete engine inspection and oil check for fuel vehicles.
+            </div>
+            <div class="info-item">
+                <b class="highlight-text">&check; Battery & Electrical Diagnostics:</b> Battery health checkup for Electric Cars and Electric Scooters.
+            </div>
+            <div class="info-item">
+                <b class="highlight-text">&check; Brake & Suspension Check:</b> Comprehensive brake adjustment and fluid replacement.
+            </div>
+            <div class="info-item">
+                <b class="highlight-text">&check; Free Washing & Cleaning:</b> Exterior foam wash and interior vacuuming on every service visit.
+            </div>
+            <div class="info-item" style="color: red; font-weight: bold; margin-top: 10px;">
+                Note: Valid for 6 months from the date of online purchase.
+            </div>
+        </div>
+
+        <!-- Section 2: Book Service Slot -->
+        <div class="section-title">2. Book Your Service Appointment</div>
+
+        <div class="form-box">
+            <form action="#">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Mobile Number</label>
+                    <input type="text" placeholder="Enter mobile number" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Vehicle Type</label>
+                    <select required>
+                        <option value="">Select Vehicle Type</option>
+                        <option value="car">Fuel Car</option>
+                        <option value="ev-car">Electric Car (EV)</option>
+                        <option value="bike">Motorcycle / Bike</option>
+                        <option value="scooter">Petrol Scooter</option>
+                        <option value="ev-scooter">Electric Scooter</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Vehicle Registration / Order Number</label>
+                    <input type="text" placeholder="Enter Order ID or Vehicle Number" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Preferred Service Date</label>
+                    <input type="date" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Confirm Service Booking</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Auto Showroom &copy; 2026 | All Rights Reserved
+        </div>
+
+    </div>
+
+</body>
+</html>

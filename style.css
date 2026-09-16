@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    color: black;
+    margin: 0;
+}
+
+.header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* OFFER BANNER */
+.offer-bar {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* NAVIGATION MENU */
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.menu-item a:hover {
+    color: cyan;
+}
