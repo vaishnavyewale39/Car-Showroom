@@ -1,0 +1,17 @@
+/* Extra styles for the new JavaScript components. Existing design is retained. */
+.theme-toggle { margin-top: 10px; padding: 7px 12px; border: 1px solid white; border-radius: 4px; cursor: pointer; background: white; color: navy; font-weight: bold; }
+.vehicle-filters { margin: 15px 0 20px; padding: 12px; background: whitesmoke; border: 1px solid silver; }
+.vehicle-filters input, .vehicle-filters select { box-sizing: border-box; padding: 10px; margin: 4px; max-width: 100%; border: 1px solid #999; border-radius: 4px; }
+#searchCount, .management-note { font-size: 13px; margin: 8px 4px 0; }
+.delete-button { background: #b22222 !important; color: white !important; margin-left: 5px; cursor: pointer; border: 0; }
+.data-table .table-row { align-items: center; }
+.data-table .table-row button { margin-top: 3px; }
+body, .main-box, .vehicle-card, .card, .form-box, .data-table, .price-table, .contact-box, .service-box, .vehicle-filters { transition: background-color .2s, color .2s; }
+body.dark-mode { background-color: #17191d !important; color: #f0f0f0 !important; }
+.dark-mode .main-box { background-color: #24272d !important; color: #f0f0f0 !important; border-color: #555 !important; }
+.dark-mode .section-title, .dark-mode .page-title { color: #f5f5f5 !important; border-color: #aaa !important; }
+.dark-mode .vehicle-card, .dark-mode .card, .dark-mode .form-box, .dark-mode .data-table, .dark-mode .price-table, .dark-mode .contact-box, .dark-mode .vehicle-filters, .dark-mode .service-box { background-color: #30343b !important; color: #f0f0f0 !important; border-color: #555 !important; }
+.dark-mode input, .dark-mode select, .dark-mode textarea { background-color: #202329 !important; color: #fff !important; border-color: #666 !important; }
+.dark-mode .vehicle-name, .dark-mode .card-title { color: #8ab4ff !important; }
+.dark-mode .vehicle-spec, .dark-mode .small-text { color: #ddd !important; }
+@media (max-width: 860px) { .main-box { width: auto !important; max-width: 100%; box-sizing: border-box; } .data-table { overflow-x: auto; } }

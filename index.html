@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Auto Showroom - Login</title>
+    <style>
+        /* BASIC CSS USING COLOR WORDS ONLY */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            color: black;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* MAIN OUTER CONTAINER */
+        .main-box {
+            width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border: 2px solid gray;
+            padding: 20px;
+        }
+
+        /* HEADER */
+        .header {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* OFFER BANNER */
+        .offer-bar {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* LOGIN CONTAINER */
+        .login-box {
+            background-color: whitesmoke;
+            border: 1px solid silver;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .login-title {
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        .input-group {
+            margin-bottom: 12px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 4px;
+            color: black;
+        }
+
+        .input-group input,
+        .input-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid gray;
+            font-size: 14px;
+        }
+
+        /* BUTTONS */
+        .submit-btn {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .guest-btn {
+            display: block;
+            text-align: center;
+            background-color: green;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        /* FOOTER */
+        .footer {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 13px;
+        }
+    </style>
+    <link rel="stylesheet" href="showroom.css">
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="main-box">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>AUTO SHOWROOM</h1>
+            <div>Welcome to Online Portal</div>
+        </div>
+
+        <!-- Special Offer Banner -->
+        <div class="offer-bar">
+            SPECIAL OFFER: Order Any Vehicle Online & Get 6 Months FREE Servicing!
+        </div>
+
+        <!-- Login Form -->
+        <div class="login-box">
+            <div class="login-title">Account Login</div>
+            <form action="home.html">
+                <div class="input-group">
+                    <label>Login As</label>
+                    <select required>
+                        <option value="customer">Customer / Buyer</option>
+                        <option value="owner">Showroom Owner / Admin</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Username / Email</label>
+                    <input type="text" placeholder="Enter username or email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter password" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Login to Portal</button>
+                <button type="submit" class="submit-btn" formaction="admin.html"
+                        style="background-color: darkred; margin-top: 8px;">
+                    Login as Admin / Owner
+                </button>
+            </form>
+
+            <a href="home.html" class="guest-btn">Continue as Guest Visitor &rarr;</a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Auto Showroom &copy; 2026 | All Rights Reserved
+        </div>
+
+    </div>
+
+    <script src="showroom.js"></script>
+</body>
+</html>

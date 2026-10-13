@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Auto Showroom - Price List & Contact</title>
+    <style>
+        /* BASIC CSS USING COLOR WORDS ONLY */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            color: black;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* MAIN OUTER CONTAINER */
+        .main-box {
+            width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border: 2px solid gray;
+            padding: 20px;
+        }
+
+        /* HEADER */
+        .header {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* OFFER BANNER */
+        .offer-bar {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* NAVIGATION MENU */
+        .menu {
+            background-color: black;
+            text-align: center;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            display: inline-block;
+            margin: 0 8px;
+        }
+
+        .menu-item a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .menu-item a:hover {
+            color: cyan;
+        }
+
+        /* SECTION TITLES */
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        /* PRICE LIST TABLE USING DIVS */
+        .price-table {
+            background-color: whitesmoke;
+            border: 1px solid silver;
+            margin-bottom: 20px;
+        }
+
+        .table-header {
+            background-color: navy;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .table-row {
+            padding: 10px;
+            border-bottom: 1px solid silver;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        .vehicle-type {
+            color: dimgray;
+            font-size: 12px;
+        }
+
+        .price-val {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* CONTACT INFORMATION BOX */
+        .contact-box {
+            background-color: whitesmoke;
+            border: 1px solid silver;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: dimgray;
+        }
+
+        /* INQUIRY FORM */
+        .form-box {
+            background-color: whitesmoke;
+            border: 1px solid silver;
+            padding: 15px;
+        }
+
+        .input-group {
+            margin-bottom: 12px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 4px;
+            color: black;
+        }
+
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid gray;
+            font-size: 14px;
+        }
+
+        .submit-btn {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* FOOTER */
+        .footer {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 13px;
+        }
+    </style>
+    <link rel="stylesheet" href="showroom.css">
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="main-box">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>AUTO SHOWROOM</h1>
+            <div>Vehicle Price List & Contact Information</div>
+        </div>
+
+        <!-- Offer Banner -->
+        <div class="offer-bar">
+            SPECIAL OFFER: Order Any Vehicle Online & Get 6 Months FREE Servicing!
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="menu">
+            <div class="menu-item"><a href="home.html">Home</a></div>
+            <div class="menu-item"><a href="car.html">Cars & EVs</a></div>
+            <div class="menu-item"><a href="bike.html">Bikes & Scooters</a></div>
+            <div class="menu-item"><a href="servicing.html">Servicing</a></div>
+            <div class="menu-item"><a href="prices.html">Price List</a></div>
+            <div class="menu-item"><a href="contact.html">Contact Us</a></div>
+            <div class="menu-item"><a href="index.html" style="color: yellow;">Logout</a></div>
+        </div>
+
+        <!-- Section 1: Complete Vehicle Price List -->
+        <div class="section-title">1. Complete Vehicle Price List</div>
+
+        <div class="price-table">
+            <div class="table-header">
+                <div>Vehicle Name & Category</div>
+                <div>Ex-Showroom Price</div>
+            </div>
+
+            <div class="table-row">
+                <div><b>City Sedan X</b> <span class="vehicle-type">(Petrol Car)</span></div>
+                <div class="price-val">₹10,50,000</div>
+            </div>
+
+            <div class="table-row">
+                <div><b>Urban SUV Z</b> <span class="vehicle-type">(Diesel Car)</span></div>
+                <div class="price-val">₹16,20,000</div>
+            </div>
+
+            <div class="table-row">
+                <div><b>E-Drive Compact</b> <span class="vehicle-type">(Electric Car)</span></div>
+                <div class="price-val">₹13,80,000</div>
+            </div>
+
+            <div class="table-row">
+                <div><b>E-Cruiser Pro</b> <span class="vehicle-type">(Electric Car)</span></div>
+                <div class="price-val">₹21,00,000</div>
+            </div>
+
+            <div class="table-row">
+                <div><b>SportRider 200</b> <span class="vehicle-type">(Sports Bike)</span></div>
+                <div class="price-val">₹1,45,000</div>
+            </div>
+
+            <div class="table-row">
+                <div><b>Street Cruiser 150</b> <span class="vehicle-type">(Commuter Bike)</span></div>
+                <div class="price-val">₹98,000</div>
+            </div>
+
+            <div class="table-row">
+                <div><b>City Glide 125</b> <span class="vehicle-type">(Petrol Scooter)</span></div>
+                <div class="price-val">₹82,000</div>
+            </div>
+
+            <div class="table-row">
+                <div><b>E-Scooter Pro</b> <span class="vehicle-type">(Electric Scooter)</span></div>
+                <div class="price-val">₹1,15,000</div>
+            </div>
+        </div>
+
+
+        <!-- Section 2: Contact Information -->
+        <div class="section-title">2. Showroom Location & Contact Details</div>
+
+        <div class="contact-box">
+            <div class="contact-item"><b>Address:</b> Auto Showroom Main Branch, Highway Road, City Center</div>
+            <div class="contact-item"><b>Phone Number:</b> +91 98765 43210 / +91 022 1234567</div>
+            <div class="contact-item"><b>Email Address:</b> contact@autoshowroom.com</div>
+            <div class="contact-item"><b>Working Hours:</b> Monday - Sunday (9:00 AM - 8:00 PM)</div>
+        </div>
+
+
+        <!-- Section 3: Send Message / Test Drive Request -->
+        <div class="section-title">3. Send Us an Inquiry / Book Test Drive</div>
+
+        <div class="form-box">
+            <form action="#">
+                <div class="input-group">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Mobile Number</label>
+                    <input type="text" placeholder="Enter your mobile number" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Message / Vehicle Interested In</label>
+                    <textarea rows="3" placeholder="Type your message or vehicle preference..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Inquiry</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Auto Showroom &copy; 2026 | All Rights Reserved
+        </div>
+
+    </div>
+
+    <script src="showroom.js"></script>
+</body>
+</html>
